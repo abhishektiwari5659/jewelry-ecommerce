@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/451078743_470242019058237_4771313601828504544_n.jpg?stp=dst-jpg_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vVLk7V_tVqUQ7kNvgHFbiL2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHAA0FmtmZqyX2_PE7HqOfZMCrtI5bRQdMWFUl2-in38A&oe=66C1EF54"
+                    alt="Jewelry Store Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="category.html">Category</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <!-- <a href="signup.html"><i class="fas fa-sign-in-alt"></i></a> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Elegance</h1>
+                <p>Explore our exquisite collection of fine jewelry crafted to perfection.</p>
+                <a href="shop.html" class="btn-primary">Shop Now</a>
+                <a href="about.html" class="btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="IMG20240626094248.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$199.99</p>
+                    <button class="btn view-details" data-id="1">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="IMG20240626112752.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$299.99</p>
+                    <button class="btn view-details" data-id="2">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="IMG20240626114924.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$399.99</p>
+                    <button class="btn view-details" data-id="3">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Jewelry Store. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="Product Image">
+            <p id="modalPrice"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+
+</html>
